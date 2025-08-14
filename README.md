@@ -1,6 +1,6 @@
 # Ai-Powered Code Reviewer | MERN Stack & AI Integration
 
-A **AI-Powered Code Reviewer** web application built using **MERN stack** (MongoDB, Express, React, Node.js) and integrated with AI APIs (OpenAI / Google AI).  
+**AI-Powered Code Reviewer** web application built using **MERN stack** (MongoDB, Express, React, Node.js) and integrated with AI APIs (OpenAI / Google AI).  
 It allows users to submit code snippets and receive intelligent suggestions to improve code quality, readability, and performance.
 
 ---
@@ -15,14 +15,14 @@ It allows users to submit code snippets and receive intelligent suggestions to i
 
 ## 🛠 Tech Stack
 **Frontend:** React, Tailwind CSS  
-**Backend:** Node.js, Express.js  
-**Database:** MongoDB  
+**Backend:** Node.js, Express.js   
 **AI Integration:** OpenAI / Google AI API  
 **Version Control:** Git, GitHub  
 
 ---
 
 ## 📂 Folder Structure
+```
 Ai-Powered-Code-Reviewer/
 │
 ├── client/ # React frontend
@@ -36,7 +36,7 @@ Ai-Powered-Code-Reviewer/
 │ └── .env # Contains API keys (ignored in Git)
 ├── .gitignore
 └── README.md
-
+```
 ---
 
 ## 🚀 Installation & Setup
@@ -45,69 +45,63 @@ Ai-Powered-Code-Reviewer/
 ```bash
 git clone https://github.com/radha35/Ai-Powered-Code-Reviewer.git
 cd Ai-Powered-Code-Reviewer
+```
 
 ---
-## 🚀 Installation & Setup
-### 1️⃣ Clone the Repository
+
+### 2️⃣ Install Dependencies
 ```bash
 # Backend
 cd BackEnd
 npm install
 
+
 # Frontend
-cd ../client
+cd Frontend
 npm install
-3️⃣ Set up Environment Variables
+
+```
+---
+
+### 3️⃣ Set up Environment Variables
 Create a .env file inside BackEnd/
 
 Add your API keys and configuration:
-
-env
-Copy code
+```bash
 GOOGLE_GEMINI_KEY=your_new_api_key
-MONGO_URI=your_mongo_connection_string
-⚠️ Important: Do NOT commit your .env file. It is ignored by .gitignore to keep your secrets safe.
+```
+---
 
-4️⃣ Run the Application
-bash
+### 4️⃣ Run the Application
+```bash
 Copy code
 # Backend
 cd ../BackEnd
 npm start
 
 # Frontend
-cd ../client
+cd ../Frontend
 npm start
 5️⃣ Access the App
 Frontend: http://localhost:3000
 
 Backend API: http://localhost:5000
+```
+---
 
-⚙ How It Works
+### ⚙ How It Works
 User submits a code snippet via the frontend
-
 Backend sends code to the AI API for analysis
-
 AI returns suggestions to improve code quality and readability
-
 Suggestions are displayed on frontend in real-time
 
-🔒 Security Notes
-.env files are ignored in Git to prevent exposing secrets
+---
 
-If a secret was accidentally committed, rotate or revoke it immediately
-
-Use .env.example with placeholder values if sharing with collaborators
-
-👨‍💻 Contributing
+### 👨‍💻 Contributing
 Fork the repo
-
 Open issues for bugs or feature requests
-
 Submit pull requests with improvements
 
-📄 License
-This project is licensed under MIT License
-
-Author: Radha
+---
+### Author: Radha
 GitHub: https://github.com/radha35
