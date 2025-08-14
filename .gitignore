@@ -33,3 +33,7 @@ client/dist
 *.sln
 *.sw?
 .env
+.env
+backend/.env
+.env
+backend/.env
